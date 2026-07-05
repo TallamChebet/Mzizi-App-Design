@@ -1,0 +1,45 @@
+:root {
+  /* Mzizi brand — sampled from the Z-swoosh logo gradient */
+  --gold: #F5A623;
+  --orange: #F5721E;
+  --amber: #F5A623;
+  --pink: #F5008C;
+  --magenta: #C2185B;
+  --plum: #8E0050;
+  /* signature swoosh gradient — bright, for buttons & small accents */
+  --brand-gradient: linear-gradient(135deg, #F5A623 0%, #F5721E 28%, #F5008C 62%, #8E0050 100%);
+  /* deep variant — plum-dominant, keeps white text readable on big cards */
+  --brand-gradient-deep: linear-gradient(140deg, #C2185B 0%, #A00A5A 38%, #8E0050 68%, #5C0034 100%);
+
+  /* App UI accent — Mzizi brand plum */
+  --purple: #8E0050;        /* solid accent (kept name for reuse) */
+  --purple-050: #FBE7F0;    /* light plum/pink tint */
+  --accent-deep: #8E0050;   /* plum */
+  --ink-header: #2A0A1E;
+  --text: #1B1B22;
+  --muted: #8A8A96;
+  --line: #EFEFF3;
+  --bg: #FFFFFF;
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: #EDEDF0;
+  color: var(--text);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+button { font-family: inherit; }
+a { color: inherit; text-decoration: none; }

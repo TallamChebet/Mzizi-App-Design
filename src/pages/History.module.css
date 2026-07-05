@@ -1,0 +1,98 @@
+.page {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.header {
+  padding: 6px 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+.title { font-size: 24px; font-weight: 700; color: var(--text); }
+.iconBtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+/* filter pills */
+.filters {
+  display: flex;
+  gap: 10px;
+  padding: 6px 20px 14px;
+  flex: 0 0 auto;
+}
+.pill {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.pillActive {
+  background: var(--brand-gradient);
+  border-color: transparent;
+  color: #fff;
+}
+
+.scroll {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.dateLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 14px 20px 8px;
+}
+
+.list { padding: 0 20px; display: flex; flex-direction: column; gap: 10px; }
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 4px;
+}
+.ico {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+.icoOut { background: #FDE7F1; }
+.icoIn { background: #E4F8EC; }
+.icoBill { background: var(--purple-050); }
+
+.body { flex: 1 1 auto; min-width: 0; }
+.name { font-size: 15px; font-weight: 600; color: var(--text); }
+.meta { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+.right { text-align: right; flex: 0 0 auto; }
+.amt { font-size: 15px; font-weight: 700; white-space: nowrap; }
+.amtIn { color: #0F9D58; }
+.amtOut { color: var(--text); }
+.status {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+.ok { color: #0F9D58; }
+.pending { color: #F08C1E; }

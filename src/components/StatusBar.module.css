@@ -1,0 +1,17 @@
+.statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px 6px;
+  font-size: 15px;
+  font-weight: 600;
+  flex: 0 0 auto;
+}
+.icons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.icons svg {
+  display: block;
+}

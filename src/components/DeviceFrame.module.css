@@ -1,0 +1,78 @@
+.device {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  background: #1c1c1e;
+  border-radius: 56px;
+  padding: 12px;
+  box-shadow:
+    0 0 0 2px #2c2c2e,
+    0 0 0 8px #3a3a3c,
+    0 0 0 9px #565658,
+    0 40px 80px rgba(0, 0, 0, 0.45),
+    0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* side buttons */
+.device::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 180px;
+  width: 4px;
+  height: 64px;
+  background: #4a4a4c;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 -84px 0 #4a4a4c, 0 84px 0 #4a4a4c;
+}
+.device::after {
+  content: "";
+  position: absolute;
+  right: -11px;
+  top: 230px;
+  width: 4px;
+  height: 96px;
+  background: #4a4a4c;
+  border-radius: 0 3px 3px 0;
+}
+
+.screen {
+  position: relative;
+  width: 366px;
+  height: 820px;
+  margin: 0 auto;
+  background: var(--bg);
+  overflow: hidden;
+  border-radius: 46px;
+  display: flex;
+  flex-direction: column;
+}
+
+.island {
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 122px;
+  height: 34px;
+  background: #000;
+  border-radius: 20px;
+  z-index: 50;
+}
+
+.homeIndicator {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 134px;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.28);
+  z-index: 50;
+}
+
+/* dark island when screen top is dark */
+.homeIndicator.light {
+  background: rgba(255, 255, 255, 0.4);
+}

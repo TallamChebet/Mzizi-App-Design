@@ -1,0 +1,31 @@
+.splash {
+  flex: 1 1 auto;
+  background: var(--orange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15vh 32px 40px;
+  cursor: pointer;
+}
+.wordmark {
+  width: 62%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
+.tagline {
+  margin-top: 18px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.98;
+  text-align: center;
+}
+.swoosh {
+  width: 68%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 10vh;
+  filter: drop-shadow(0 12px 34px rgba(142, 0, 80, 0.3));
+}
