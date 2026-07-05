@@ -1,21 +1,27 @@
 :root {
-  /* Mzizi brand — sampled from the Z-swoosh logo gradient */
-  --gold: #F5A623;
-  --orange: #F5721E;
-  --amber: #F5A623;
-  --pink: #F5008C;
-  --magenta: #C2185B;
-  --plum: #8E0050;
-  /* signature swoosh gradient — bright, for buttons & small accents */
-  --brand-gradient: linear-gradient(135deg, #F5A623 0%, #F5721E 28%, #F5008C 62%, #8E0050 100%);
-  /* deep variant — plum-dominant, keeps white text readable on big cards */
-  --brand-gradient-deep: linear-gradient(140deg, #C2185B 0%, #A00A5A 38%, #8E0050 68%, #5C0034 100%);
+  /* Afrinet brand — violet scale (from merchant portal) */
+  --brand-50: #faf5ff;
+  --brand-100: #f3e8ff;
+  --brand-200: #e9d5ff;
+  --brand-300: #d8b4fe;
+  --brand-400: #c084fc;
+  --brand-magenta: #b026ff;   /* brand-500 */
+  --brand-primary: #6d28d9;   /* brand-600, main accent */
+  --brand-700: #5b21b6;
+  --brand-800: #4a0d99;
+  --brand-deep: #330099;      /* brand-900 */
+  --brand-950: #1e005c;
 
-  /* App UI accent — Mzizi brand plum */
-  --purple: #8E0050;        /* solid accent (kept name for reuse) */
-  --purple-050: #FBE7F0;    /* light plum/pink tint */
-  --accent-deep: #8E0050;   /* plum */
-  --ink-header: #2A0A1E;
+  /* signature gradient — deep indigo sweeping to bright magenta */
+  --brand-gradient: linear-gradient(135deg, #330099 0%, #6d28d9 55%, #b026ff 100%);
+  /* deep variant for big cards — indigo-dominant, readable white text */
+  --brand-gradient-deep: linear-gradient(140deg, #4a0d99 0%, #330099 55%, #1e005c 100%);
+
+  /* App UI accent — Afrinet primary violet */
+  --purple: #6d28d9;        /* solid accent (kept name for reuse) */
+  --purple-050: #f3e8ff;    /* light violet tint (brand-100) */
+  --accent-deep: #330099;   /* deep indigo */
+  --ink-header: #16091f;
   --text: #1B1B22;
   --muted: #8A8A96;
   --line: #EFEFF3;

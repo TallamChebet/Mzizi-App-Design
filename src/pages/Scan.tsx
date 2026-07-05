@@ -54,10 +54,10 @@ export default function Scan() {
             <button className={styles.sheetBtn}>
               <span className={styles.ico}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="4" y="4" width="7" height="7" rx="1.5" stroke="#8E0050" strokeWidth="1.8" />
-                  <rect x="13" y="4" width="7" height="7" rx="1.5" stroke="#8E0050" strokeWidth="1.8" />
-                  <rect x="4" y="13" width="7" height="7" rx="1.5" stroke="#8E0050" strokeWidth="1.8" />
-                  <rect x="14" y="14" width="5" height="5" rx="1" fill="#8E0050" />
+                  <rect x="4" y="4" width="7" height="7" rx="1.5" stroke="#6d28d9" strokeWidth="1.8" />
+                  <rect x="13" y="4" width="7" height="7" rx="1.5" stroke="#6d28d9" strokeWidth="1.8" />
+                  <rect x="4" y="13" width="7" height="7" rx="1.5" stroke="#6d28d9" strokeWidth="1.8" />
+                  <rect x="14" y="14" width="5" height="5" rx="1" fill="#6d28d9" />
                 </svg>
               </span>
               <span>My QR</span>
@@ -65,9 +65,9 @@ export default function Scan() {
             <button className={styles.sheetBtn}>
               <span className={styles.ico}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="#8E0050" strokeWidth="1.8" />
-                  <circle cx="8.5" cy="10" r="1.8" stroke="#8E0050" strokeWidth="1.6" />
-                  <path d="M4 17l5-4 4 3 3-2 4 3" stroke="#8E0050" strokeWidth="1.8" strokeLinejoin="round" />
+                  <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="#6d28d9" strokeWidth="1.8" />
+                  <circle cx="8.5" cy="10" r="1.8" stroke="#6d28d9" strokeWidth="1.6" />
+                  <path d="M4 17l5-4 4 3 3-2 4 3" stroke="#6d28d9" strokeWidth="1.8" strokeLinejoin="round" />
                 </svg>
               </span>
               <span>Upload</span>
@@ -75,8 +75,8 @@ export default function Scan() {
             <button className={styles.sheetBtn}>
               <span className={styles.ico}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="5" y="3" width="14" height="18" rx="2.5" stroke="#8E0050" strokeWidth="1.8" />
-                  <path d="M8 7h8M8 11h8M8 15h4" stroke="#8E0050" strokeWidth="1.8" strokeLinecap="round" />
+                  <rect x="5" y="3" width="14" height="18" rx="2.5" stroke="#6d28d9" strokeWidth="1.8" />
+                  <path d="M8 7h8M8 11h8M8 15h4" stroke="#6d28d9" strokeWidth="1.8" strokeLinecap="round" />
                 </svg>
               </span>
               <span>Paybill</span>

@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  box-shadow: 0 16px 34px rgba(142, 0, 80, 0.3);
+  box-shadow: 0 16px 34px rgba(109, 40, 217, 0.3);
 }
 .avatar {
   width: 64px;
@@ -49,7 +49,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.4);
-  background: linear-gradient(135deg, #F5A623, #8E0050);
+  background: linear-gradient(135deg, #b026ff, #6d28d9);
   flex: 0 0 auto;
 }
 .info { flex: 1 1 auto; min-width: 0; }

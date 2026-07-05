@@ -141,13 +141,13 @@ function DirIcon({ dir }: { dir: Dir }) {
   if (dir === 'bill')
     return (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-        <rect x="5" y="3" width="12" height="16" rx="2" stroke="#8E0050" strokeWidth="1.8" />
-        <path d="M8 7h6M8 11h6M8 15h3" stroke="#8E0050" strokeWidth="1.8" strokeLinecap="round" />
+        <rect x="5" y="3" width="12" height="16" rx="2" stroke="#6d28d9" strokeWidth="1.8" />
+        <path d="M8 7h6M8 11h6M8 15h3" stroke="#6d28d9" strokeWidth="1.8" strokeLinecap="round" />
       </svg>
     )
   return (
     <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-      <path d="M16 16L6 6M6 14V6h8" stroke="#8E0050" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16 16L6 6M6 14V6h8" stroke="#6d28d9" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
 }

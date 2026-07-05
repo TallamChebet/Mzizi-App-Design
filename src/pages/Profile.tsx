@@ -134,72 +134,72 @@ function Group({ label, rows }: { label: string; rows: Row[] }) {
 function personIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <circle cx="10" cy="7" r="3" stroke="#8E0050" strokeWidth="1.6" />
-      <path d="M4 16c0-3 2.7-5 6-5s6 2 6 5" stroke="#8E0050" strokeWidth="1.6" strokeLinecap="round" />
+      <circle cx="10" cy="7" r="3" stroke="#6d28d9" strokeWidth="1.6" />
+      <path d="M4 16c0-3 2.7-5 6-5s6 2 6 5" stroke="#6d28d9" strokeWidth="1.6" strokeLinecap="round" />
     </svg>
   )
 }
 function linkIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <path d="M8 12l4-4M7 13l-1 1a2.5 2.5 0 01-3.5-3.5l2-2M13 7l1-1a2.5 2.5 0 013.5 3.5l-2 2" stroke="#8E0050" strokeWidth="1.6" strokeLinecap="round" />
+      <path d="M8 12l4-4M7 13l-1 1a2.5 2.5 0 01-3.5-3.5l2-2M13 7l1-1a2.5 2.5 0 013.5 3.5l-2 2" stroke="#6d28d9" strokeWidth="1.6" strokeLinecap="round" />
     </svg>
   )
 }
 function cardIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <rect x="2.5" y="5" width="15" height="10" rx="2" stroke="#8E0050" strokeWidth="1.6" />
-      <path d="M2.5 8h15" stroke="#8E0050" strokeWidth="1.6" />
+      <rect x="2.5" y="5" width="15" height="10" rx="2" stroke="#6d28d9" strokeWidth="1.6" />
+      <path d="M2.5 8h15" stroke="#6d28d9" strokeWidth="1.6" />
     </svg>
   )
 }
 function shieldIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <path d="M10 2l6 2.5V9c0 4-2.6 6.5-6 8-3.4-1.5-6-4-6-8V4.5L10 2z" stroke="#8E0050" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M7.5 10l1.8 1.8L13 8" stroke="#8E0050" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10 2l6 2.5V9c0 4-2.6 6.5-6 8-3.4-1.5-6-4-6-8V4.5L10 2z" stroke="#6d28d9" strokeWidth="1.6" strokeLinejoin="round" />
+      <path d="M7.5 10l1.8 1.8L13 8" stroke="#6d28d9" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
 }
 function bellIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <path d="M5 8a5 5 0 0110 0c0 4 1.5 5 1.5 5H3.5S5 12 5 8z" stroke="#8E0050" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M8 16a2 2 0 004 0" stroke="#8E0050" strokeWidth="1.6" strokeLinecap="round" />
+      <path d="M5 8a5 5 0 0110 0c0 4 1.5 5 1.5 5H3.5S5 12 5 8z" stroke="#6d28d9" strokeWidth="1.6" strokeLinejoin="round" />
+      <path d="M8 16a2 2 0 004 0" stroke="#6d28d9" strokeWidth="1.6" strokeLinecap="round" />
     </svg>
   )
 }
 function globeIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <circle cx="10" cy="10" r="7" stroke="#8E0050" strokeWidth="1.6" />
-      <path d="M3 10h14M10 3c2 2 2 12 0 14M10 3c-2 2-2 12 0 14" stroke="#8E0050" strokeWidth="1.4" />
+      <circle cx="10" cy="10" r="7" stroke="#6d28d9" strokeWidth="1.6" />
+      <path d="M3 10h14M10 3c2 2 2 12 0 14M10 3c-2 2-2 12 0 14" stroke="#6d28d9" strokeWidth="1.4" />
     </svg>
   )
 }
 function coinIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <circle cx="10" cy="10" r="7" stroke="#8E0050" strokeWidth="1.6" />
-      <path d="M10 6v8M8 8h3a1.5 1.5 0 010 3H8m0 0h3.5" stroke="#8E0050" strokeWidth="1.4" strokeLinecap="round" />
+      <circle cx="10" cy="10" r="7" stroke="#6d28d9" strokeWidth="1.6" />
+      <path d="M10 6v8M8 8h3a1.5 1.5 0 010 3H8m0 0h3.5" stroke="#6d28d9" strokeWidth="1.4" strokeLinecap="round" />
     </svg>
   )
 }
 function helpIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <circle cx="10" cy="10" r="7" stroke="#8E0050" strokeWidth="1.6" />
-      <path d="M8 8a2 2 0 113 1.7c-.6.4-1 .8-1 1.8" stroke="#8E0050" strokeWidth="1.6" strokeLinecap="round" />
-      <circle cx="10" cy="14" r="0.9" fill="#8E0050" />
+      <circle cx="10" cy="10" r="7" stroke="#6d28d9" strokeWidth="1.6" />
+      <path d="M8 8a2 2 0 113 1.7c-.6.4-1 .8-1 1.8" stroke="#6d28d9" strokeWidth="1.6" strokeLinecap="round" />
+      <circle cx="10" cy="14" r="0.9" fill="#6d28d9" />
     </svg>
   )
 }
 function docIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-      <path d="M5 2.5h6l4 4V17a.5.5 0 01-.5.5h-9A.5.5 0 015 17V2.5z" stroke="#8E0050" strokeWidth="1.6" strokeLinejoin="round" />
-      <path d="M11 2.5V6.5h4M7.5 11h5M7.5 14h5" stroke="#8E0050" strokeWidth="1.4" strokeLinecap="round" />
+      <path d="M5 2.5h6l4 4V17a.5.5 0 01-.5.5h-9A.5.5 0 015 17V2.5z" stroke="#6d28d9" strokeWidth="1.6" strokeLinejoin="round" />
+      <path d="M11 2.5V6.5h4M7.5 11h5M7.5 14h5" stroke="#6d28d9" strokeWidth="1.4" strokeLinecap="round" />
     </svg>
   )
 }

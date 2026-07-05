@@ -18,8 +18,6 @@ const transactions: Tx[] = [
   { name: 'Netflix Subcription', time: 'Today, 6:00 AM', amount: '-KSh 32.30', icon: 'netflix' },
 ]
 
-const actions = ['Transfer', 'Receive', 'Add', 'More'] as const
-
 export default function Home() {
   const navigate = useNavigate()
   const [showNotice, setShowNotice] = useState(true)
@@ -51,7 +49,7 @@ export default function Home() {
               <div className={styles.name}>Jansen</div>
               <div className={styles.tier}>
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                  <path d="M6.5 1l1.4 3.3L11.5 5 8.8 7.4l.8 3.6-3.1-1.9-3.1 1.9.8-3.6L1.5 5l3.6-.7L6.5 1z" fill="#8E0050" />
+                  <path d="M6.5 1l1.4 3.3L11.5 5 8.8 7.4l.8 3.6-3.1-1.9-3.1 1.9.8-3.6L1.5 5l3.6-.7L6.5 1z" fill="#6d28d9" />
                 </svg>
                 Platinum
               </div>
@@ -66,56 +64,49 @@ export default function Home() {
           </button>
         </div>
 
-        {/* stacked credit cards */}
-        <div className={styles.cardStack}>
-          <div className={styles.cardBack}>
-            <span className={styles.visaBack}>VISA</span>
-            <span className={styles.cardBackNo}>**** 1278</span>
-          </div>
+        {/* Afrinet debit card */}
+        <div className={styles.cardWrap}>
+          <div className={styles.afrinetCard}>
+            {/* circuit texture */}
+            <svg className={styles.circuit} viewBox="0 0 320 200" fill="none" preserveAspectRatio="none">
+              <path d="M20 40h60v30h50M0 100h40v40h80M200 20v40h60v50M240 120h80M180 160h60v30M280 60v90M120 180h40v20" stroke="#fff" strokeWidth="1" opacity="0.1" />
+              <circle cx="80" cy="70" r="2" fill="#fff" opacity="0.5" />
+              <circle cx="260" cy="110" r="2" fill="#fff" opacity="0.5" />
+              <circle cx="200" cy="60" r="2" fill="#fff" opacity="0.5" />
+            </svg>
 
-          <div className={styles.cardFront}>
-            <div className={styles.vMark}>V</div>
-            <div className={styles.cardLabel}>Total balance</div>
-            <div className={styles.cardBalance}>
-              KSh 47,693.00
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" stroke="#fff" strokeWidth="1.6" />
-                <circle cx="12" cy="12" r="2.6" stroke="#fff" strokeWidth="1.6" />
-              </svg>
-            </div>
-            <div className={styles.cardFooter}>
-              <div className={styles.cardAcct}>
-                <span className={styles.miniCard}>
-                  <svg width="26" height="18" viewBox="0 0 26 18" fill="none">
-                    <rect x="0.5" y="0.5" width="25" height="17" rx="3.5" fill="#8E0050" />
-                    <rect x="3" y="3.5" width="6" height="4.5" rx="1" fill="#FFD84D" />
-                    <rect x="3" y="12" width="12" height="1.6" rx="0.8" fill="#fff" opacity="0.85" />
-                    <rect x="17" y="12" width="6" height="1.6" rx="0.8" fill="#fff" opacity="0.6" />
-                  </svg>
-                </span>
-                Main Acc
+            {/* top row: chip + logo */}
+            <div className={styles.cardTop}>
+              <div className={styles.chip}>
+                <span className={styles.chipLine} />
+                <span className={styles.chipLine} />
+                <span className={styles.chipLine} />
               </div>
-              <div className={styles.cardNo}>
-                26378 92893 09
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <rect x="5" y="5" width="8" height="8" rx="1.5" stroke="#fff" strokeWidth="1.3" />
-                  <path d="M3 10V4a1.5 1.5 0 011.5-1.5H10" stroke="#fff" strokeWidth="1.3" />
+              <div className={styles.afrinetLogo}>
+                <img className={styles.cardLogoImg} src="/img/mzizi-wordmark.png" alt="" />
+              </div>
+            </div>
+
+            {/* balance on card */}
+            <div className={styles.cardBalanceRow}>
+              <div className={styles.cardBalanceAmt}>KSh 47,693.00</div>
+              <button className={styles.cardEye} aria-label="Hide balance">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" stroke="#fff" strokeWidth="1.6" />
+                  <circle cx="12" cy="12" r="2.6" stroke="#fff" strokeWidth="1.6" />
                 </svg>
+              </button>
+            </div>
+
+            {/* bottom row */}
+            <div className={styles.cardBottom}>
+              <div>
+                <div className={styles.cardHolderLabel}>CARD HOLDER</div>
+                <div className={styles.cardHolder}>JANSEN MWANGI</div>
               </div>
+              <img className={styles.cardMark} src="/img/mzizi-icon.png" alt="Mzizi" />
             </div>
           </div>
-        </div>
-
-        {/* actions below card */}
-        <div className={styles.actionRow}>
-          {actions.map((label) => (
-            <div className={styles.action} key={label}>
-              <div className={styles.circ}>
-                <ActionIcon name={label} />
-              </div>
-              <span>{label}</span>
-            </div>
-          ))}
         </div>
       </div>
 
@@ -151,8 +142,8 @@ export default function Home() {
             <div className={styles.noticeHead}>
               <div className={styles.noticeIco}>
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <rect x="3" y="5" width="16" height="12" rx="2.5" stroke="#8E0050" strokeWidth="1.6" />
-                  <path d="M4 6l7 5 7-5" stroke="#8E0050" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  <rect x="3" y="5" width="16" height="12" rx="2.5" stroke="#6d28d9" strokeWidth="1.6" />
+                  <path d="M4 6l7 5 7-5" stroke="#6d28d9" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <div>
@@ -170,51 +161,20 @@ export default function Home() {
   )
 }
 
-function ActionIcon({ name }: { name: string }) {
-  switch (name) {
-    case 'Transfer':
-      return (
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <path d="M6 16L16 6M8 6h8v8" stroke="#14121a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      )
-    case 'Receive':
-      return (
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <path d="M6 6l10 10M16 8v8H8" stroke="#14121a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      )
-    case 'Add':
-      return (
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <path d="M11 5v12M5 11h12" stroke="#14121a" strokeWidth="1.8" strokeLinecap="round" />
-        </svg>
-      )
-    default:
-      return (
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <circle cx="5" cy="11" r="1.6" fill="#14121a" />
-          <circle cx="11" cy="11" r="1.6" fill="#14121a" />
-          <circle cx="17" cy="11" r="1.6" fill="#14121a" />
-        </svg>
-      )
-  }
-}
-
 function TxIcon({ icon }: { icon: Tx['icon'] }) {
   if (icon === 'withdraw')
     return (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M10 15V5M6 9l4 5 4-5" stroke="#8E0050" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M10 15V5M6 9l4 5 4-5" stroke="#6d28d9" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     )
   if (icon === 'qr')
     return (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <rect x="3" y="3" width="6" height="6" rx="1" stroke="#8E0050" strokeWidth="1.6" />
-        <rect x="11" y="3" width="6" height="6" rx="1" stroke="#8E0050" strokeWidth="1.6" />
-        <rect x="3" y="11" width="6" height="6" rx="1" stroke="#8E0050" strokeWidth="1.6" />
-        <rect x="12" y="12" width="4" height="4" rx="1" fill="#8E0050" />
+        <rect x="3" y="3" width="6" height="6" rx="1" stroke="#6d28d9" strokeWidth="1.6" />
+        <rect x="11" y="3" width="6" height="6" rx="1" stroke="#6d28d9" strokeWidth="1.6" />
+        <rect x="3" y="11" width="6" height="6" rx="1" stroke="#6d28d9" strokeWidth="1.6" />
+        <rect x="12" y="12" width="4" height="4" rx="1" fill="#6d28d9" />
       </svg>
     )
   return (

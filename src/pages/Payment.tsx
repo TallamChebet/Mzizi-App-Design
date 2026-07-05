@@ -22,7 +22,7 @@ const services: Service[] = [
     tint: '#EDE4FE',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M20 4L9 15M20 4l-7 16-3.5-6.5L3 10l17-6z" stroke="#8E0050" strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="M20 4L9 15M20 4l-7 16-3.5-6.5L3 10l17-6z" stroke="#6d28d9" strokeWidth="1.8" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -65,8 +65,8 @@ const services: Service[] = [
     tint: '#FDE7F1',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M4 9l8-5 8 5H4z" stroke="#8E0050" strokeWidth="1.8" strokeLinejoin="round" />
-        <path d="M6 10v7M10 10v7M14 10v7M18 10v7M4 20h16" stroke="#8E0050" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M4 9l8-5 8 5H4z" stroke="#6d28d9" strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="M6 10v7M10 10v7M14 10v7M18 10v7M4 20h16" stroke="#6d28d9" strokeWidth="1.8" strokeLinecap="round" />
       </svg>
     ),
   },
